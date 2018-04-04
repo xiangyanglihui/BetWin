@@ -13,11 +13,7 @@ public class UserDaoImpl implements IUserDao {
 
     @Override
     public UserEntity find(long id) {
-        UserEntity user = mongoTemplate.findById(id, UserEntity.class);
-        if (user != null) {
-            System.out.println("****************" + user.toString());
-        }
-        return user;
+        return mongoTemplate.findById(id, UserEntity.class);
     }
 
 }

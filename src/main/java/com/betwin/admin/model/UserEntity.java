@@ -7,7 +7,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="users")
+@Document(collection="user")
 public class UserEntity implements Serializable {
 
     private static final long serialVersionUID = 420860970729567323L;
