@@ -1,4 +1,4 @@
-package com.betwin.service;
+package com.betwin.contract.service;
 
 import java.io.IOException;
 

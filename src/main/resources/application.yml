@@ -1,3 +1,10 @@
 web3j:
   client-address: http://192.168.254.129:8545
   admin-client: false
+  
+spring:
+  data:
+    mongodb:
+      uri: mongodb://192.168.254.131:27017/user
+  application:
+    name: BetWin
