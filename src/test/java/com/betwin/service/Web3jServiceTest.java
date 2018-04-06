@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.web3j.crypto.CipherException;
 
 import com.betwin.contract.service.Web3jService;
 
@@ -19,7 +20,7 @@ public class Web3jServiceTest {
     
     
     @Test
-    public void testGetClientVersion() throws IOException {
+    public void testGetClientVersion() throws Exception {
         System.out.println(web3jService.getClientVersion());
     }
 
