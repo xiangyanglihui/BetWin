@@ -92,6 +92,10 @@ public class Web3jUtils {
 		return Convert.fromWei(wei.toString(), Convert.Unit.ETHER);
 	}
 	
+	public static BigDecimal weiToGwei(BigInteger wei) {
+		return Convert.fromWei(wei.toString(), Convert.Unit.GWEI);
+	}
+	
 	public static BigInteger etherToWei(BigDecimal ether) {
 		return Convert.toWei(ether, Convert.Unit.ETHER).toBigInteger();
 	}

@@ -2,10 +2,9 @@ contract DemoContract {
 	    address issuer;
 	    mapping (address => uint) balances;
 
-	    event Issue(address account, uint amount);
 	    event Transfer(address from, address to, uint amount);
 
-	    function Token() {
+	    function DemoContract() {
 	        issuer = msg.sender;
 	    }
 

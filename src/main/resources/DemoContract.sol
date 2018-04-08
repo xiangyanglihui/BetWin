@@ -2,10 +2,9 @@ contract DemoContract {
 	    address issuer;
 	    mapping (address => uint) balances;
 
-	    event Issue(address account, uint amount);
 	    event Transfer(address from, address to, uint amount);
 
-	    function Token() {
+	    function DemoContract() {
 	        issuer = msg.sender;
 	    }
 
@@ -25,5 +24,9 @@ contract DemoContract {
 
 	    function getBalance(address account) constant returns (uint) {
 	        return balances[account];
+	    }
+	    
+	    function withdraw(address to){
+	      to.send(balances[to]);
 	    }
 }
