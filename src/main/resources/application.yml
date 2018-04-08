@@ -1,11 +1,15 @@
 web3j:
-  client-address: http://127.0.0.1:8545
+  client-address: http://192.168.254.129:8545
   admin-client: true
-  chain-id: 123456
-  
+
 spring:
   data:
     mongodb:
       uri: mongodb://120.78.138.197:27017/betwin
   application:
     name: BetWin
+
+contract:
+  account-from: 937f997482563b0448c95541f36ce4114a58981b
+  account-to: f43a210449748c0d08b51ed0112b83451427b337
+  account-mining: cc82dfa29a2d537983fca51cd1159954f15623e9

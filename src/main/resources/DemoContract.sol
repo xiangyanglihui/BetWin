@@ -1,4 +1,4 @@
-contract Token {
+contract DemoContract {
 	    address issuer;
 	    mapping (address => uint) balances;
 
