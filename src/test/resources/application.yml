@@ -1,5 +1,5 @@
 web3j:
-  client-address: http://192.168.254.132:8545
+  client-address: http://127.0.0.1:8545
   admin-client: true
 
 spring:
@@ -10,6 +10,9 @@ spring:
     name: BetWin
 
 contract:
-  account-from: 4dbb1c8ba19ca70f8b33a405e43855bc89f18145
-  account-to: 6bd4e04bd13a57212f599b857e82dae792f73bf1
-  account-mining: cc82dfa29a2d537983fca51cd1159954f15623e9
+  account-from: 100c6ce70d45bb60f4c5ab9e811ece256e6cbda5
+  account-to: 6579779d64f2640822992a87d1dc3dce6f7f2e52
+
+privatekey:
+  account-from: e3b47118442218305b6d12a4b367e0da6751ab4807880850df04630053bb0ec4
+  account-to: acc4619c17f8d185801e7cd700278890b0ec391fbda8972a7331723a374d727e
