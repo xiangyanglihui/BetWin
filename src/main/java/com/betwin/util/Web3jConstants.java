@@ -4,9 +4,6 @@ import java.math.BigInteger;
 
 public class Web3jConstants {
 
-	public static final String CLIENT_IP = "localhost";
-	public static final String CLIENT_PORT = "8545";
-
 	// see https://www.reddit.com/r/ethereum/comments/5g8ia6/attention_miners_we_recommend_raising_gas_limit/
 	public static final BigInteger GAS_PRICE = BigInteger.valueOf(20_000_000_000L);
 	
@@ -16,9 +13,4 @@ public class Web3jConstants {
 
 	public static final int CONFIRMATION_ATTEMPTS = 40;
 	public static final int SLEEP_DURATION = 1000;
-
-	// file name extensions for smart contracts
-	public static final String EXT_SOLIDITY = "sol";
-	public static final String EXT_BINARY = "bin";
-	public static final String EXT_ABI = "abi";
 }

@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.web3j.protocol.core.DefaultBlockParameterName;
 import org.web3j.protocol.parity.Parity;
 
 @RunWith(SpringRunner.class)
@@ -40,9 +39,6 @@ public class CoinContractServiceTest {
 		accountFrom = "0x"+accountFrom;
 		long amount1 = 100000000L;
 		long amount2 = 40000000L;
-
-		BigInteger balance = web3j.ethGetBalance(accountFrom, DefaultBlockParameterName.LATEST).sendAsync().get().getBalance();
-		System.out.println(balance);
 		
 		service.deployContract();
 		long amount = service.getBalance(accountFrom);
