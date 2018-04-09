@@ -1,19 +1,19 @@
 contract DemoContract {
 	    address issuer;
-	    mapping (address => uint) balances;
+	    mapping (address => int) balances;
 
-	    event Transfer(address from, address to, uint amount);
+	    event Transfer(address from, address to, int amount);
 
 	    function DemoContract() {
 	        issuer = msg.sender;
 	    }
 
-	    function issue(address account, uint amount) {
+	    function issue(address account, int amount) {
 	        if (msg.sender != issuer) throw;
 	        balances[account] += amount;
 	    }
 
-	    function transfer(address to, uint amount) {
+	    function transfer(address to, int amount) {
 	        if (balances[msg.sender] < amount) throw;
 
 	        balances[msg.sender] -= amount;
